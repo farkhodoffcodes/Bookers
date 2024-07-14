@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Bookers",
+    "slug": "bookers-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/mainLogo.png",
+    "scheme": "bookersapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#21212E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alisher09.bookersapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/mainLogo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.alisher09.bookersapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "098d99c4-c6cc-4fd1-85aa-9edd7b778f33",
+        "apiBaseUrl": "http://134.122.77.107:8080/"
+      }
+    }
+  }
+}

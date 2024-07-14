@@ -1,0 +1,23 @@
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "API_BASE_URL": "http://134.122.77.107:8080/"
+      }
+    },
+
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "API_BASE_URL": "http://134.122.77.107:8080/"
+      }
+    }
+  }
+}
